@@ -70,7 +70,7 @@ jobs:
         uses: appleboy/ssh-action@v0.1.6
         with:
           host: ${{ secrets.AWS_SERVER_IP }}
-          username: ubuntu       # Change to 'ubuntu' if your EC2 user is ubuntu
+          username: ubuntu     # Change to 'ubuntu' if your EC2 user is ubuntu
           key: ${{ secrets.AWS_SSH_KEY }}
           script: |
             echo "Deploying backend..."
