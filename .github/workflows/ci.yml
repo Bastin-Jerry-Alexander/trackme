@@ -3,7 +3,7 @@ name: Backend CI & Deploy
 on:
   push:
     branches:
-      - main  # Trigger on pushes to main branch
+      - '*' 
 
 jobs:
   test-and-deploy:
