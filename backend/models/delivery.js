@@ -5,7 +5,7 @@ const deliverySchema = new mongoose.Schema({
   sender: { type: String, required: true },
   recipient: { type: String, required: true },
   address: { type: String, required: true },
-  status: { 
+  status: {
     type: String, 
     enum: ['Pending', 'Dispatched', 'Out for Delivery', 'Delivered'],
     default: 'Pending'
@@ -13,6 +13,5 @@ const deliverySchema = new mongoose.Schema({
   currentLocation: { type: String, default: '' },
   createdAt: { type: Date, default: Date.now }
 });
-
 module.exports = mongoose.model('Delivery', deliverySchema);
 
