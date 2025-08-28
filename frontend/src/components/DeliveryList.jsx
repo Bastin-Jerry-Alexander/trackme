@@ -27,7 +27,7 @@ const DeliveryList = ({ deliveries, setDeliveries, setEditingDelivery }) => {
           <p className="text-sm text-gray-500">
             Status: {delivery.status} | Location: {delivery.currentLocation}
           </p>
-          <div className="mt-2">
+          <div className="mt-4">
             <button
               onClick={() => setEditingDelivery(delivery)}
               className="mr-2 bg-yellow-500 text-white px-4 py-2 rounded"
